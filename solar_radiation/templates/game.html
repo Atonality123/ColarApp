@@ -1,0 +1,21 @@
+{% extends "master.html" %}
+{% load static %}
+
+
+{% block content%}
+<link rel="stylesheet" href="{% static 'game.css' %}">
+
+<header>
+    <h1>Welcome to game</h1>
+</header>
+
+<div class= "container">
+    <div class="card">
+        <img id= "vdo" src="https://cdn-icons-gif.flaticon.com/11195/11195859.gif" alt="Animated GIF">
+        <h1>Spin Wheel</h1>
+        <p class="title">Join the eco-friendly adventure and spin the wheel to win while making a difference! Every spin supports our mission to save the Earth. Play the spin wheel game and be a part of the solution for a greener planet!</p>
+        <p class="button"><a><button type="button">Let's spin!</button></a></p> 
+    </div>
+</div>
+
+{% endblock %}

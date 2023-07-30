@@ -1,0 +1,33 @@
+{% extends "master.html" %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'home.css' %}">
+
+    <header>
+        <h1>Welcome to EnergyOracle</h1>
+    </header>
+
+    <div class="clip">
+        <video id="vdo" src="https://cdn-icons-mp4.flaticon.com/512/10856/10856309.mp4" autoplay muted playsinline loop>
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <a href="{% url 'predict' %}"><button type="button">Let's Start</button></a>
+
+    <div class="container">
+        <div class="card">
+            <h2>About Us</h2>
+            <p>This site is made by the Colar team. We are competing in Chula Smart Campus Future Energy IoT APP Contest.</p>
+        </div>
+        <div class="card1">
+            <h2>Our features</h2>
+            <p>- Prediction Visualize</p>
+            <p>- Hackathon</p>
+            <p>- Game</p>
+            <p>- User</p>
+        </div>
+    </div>
+
+{% endblock %}

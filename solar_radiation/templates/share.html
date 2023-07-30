@@ -1,0 +1,24 @@
+{% extends "master.html" %}
+{% load static %}
+
+{% block content%}
+<link rel="stylesheet" href="{% static 'share.css' %}">
+
+<header>
+    <h1>Announce to the world!</h1>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img id= "vdo" src="https://cdn-icons-gif.flaticon.com/6172/6172532.gif" alt="Animated GIF">
+        <p></p>
+        <h1><strong>Share us</strong></h1>
+        <h1>with your social media</h1>
+        <p class="title">Here's how you can get involved: SHARE, SHARE, SHARE! Spread the word about our campaign far and wide. Share it with your friends, family, colleagues, and anyone who believes in the importance of preserving our planet for future generations.</p>
+        <p class="button"><a href="{% url 'play' %}"><button type="button">Let's share!</button></a></p> 
+    </div>
+    <div class="card">
+        <img class="image" src="https://drive.google.com/uc?export=view&id=1VwamekR7MJZbaIKlcnoglIUbJ_YA_gCJ" alt="Image">
+    </div>
+</div>
+{% endblock%}

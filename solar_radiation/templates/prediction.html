@@ -1,0 +1,22 @@
+{% extends "master.html" %}
+{% load static %}
+
+{% block content%}
+<link rel="stylesheet" href="{% static 'predict.css' %}">
+
+    <header>
+        <h1 >Welcome to Prediction</h1>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h1> <strong>Solar Energy Prediction </strong> </h1>
+            <img class="graph" src="https://drive.google.com/uc?export=view&id=1Nfo39btADCVkRMaA-fV1SQJ6KtyFF3R9" alt="Graph">
+        </div>
+        <div class="card">
+            <h1> <strong>Solar Radiation Prediction </strong> </h1>
+            <img class="graph" src="https://drive.google.com/uc?export=view&id=1zvmFPoLngXTtlbtTyZZIii9i7oOkQsKe" alt="Graph">
+        </div>
+    </div>
+
+{% endblock%}

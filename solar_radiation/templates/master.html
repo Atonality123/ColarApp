@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{% static 'navbar.css' %}">
+
+<head>
+
+  <title>{% block title %}{% endblock %}</title>
+
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a href="{% url 'home' %}" class="{% if request.path == '/colar/' %}active{% endif %}">Home</a>
+        <a href="{% url 'predict' %}" class="{% if request.path == '/colar/predict/' %}active{% endif %}">Prediction</a>
+        <a href="{% url 'hackathon' %}" class="{% if request.path == '/colar/hackathon/' %}active{% endif %}">Hackathon</a>
+        <a href="{% url 'game' %}" class="{% if request.path == '/colar/game/' %}active{% endif %}">Game</a>
+        <a href="{% url 'user' %}" class="{% if request.path == '/colar/user/' %}active{% endif %}">User</a>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+
+</html>

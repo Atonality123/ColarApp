@@ -1,0 +1,23 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'login.css' %}">
+
+<body>
+    <div class="container">
+        <div class="box">
+            <header>
+                <h1>Login Page</h1>
+            </header>
+
+            <form method="POST" action="">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">{{ form.submit_button.label }}</button>
+            </form>
+
+            {% if message %}
+            <h2>{{ message }}</h2>
+            {% endif %}
+        </div>
+    </div>
+</body>

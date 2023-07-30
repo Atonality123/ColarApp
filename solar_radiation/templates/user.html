@@ -1,0 +1,52 @@
+{% extends "master.html" %}
+{% load static %}
+
+{% block content%}
+
+<link rel="stylesheet" href="{% static 'user.css' %}">
+
+<header>
+    <h1>Welcome User</h1>
+</header>
+
+
+<div class="container">
+    <div class="card">
+        <img src="https://shorturl.at/mnrtS" alt="Chula" style="width:100%">
+        <p></p>
+        <h1>ColarAdmin</h1>
+        <p class="title">Member in Colar Team</p>
+        <p>Chulalongkorn University</p>
+        <p><a href="{% url 'login' %}"><button type="button">Log out</button></a></p>
+    </div>
+    <div class="card">
+        <h1>Real-Time status</h1>
+        <div class = "data">
+            <p>Date: {{date}} (d/m/Y)</p>
+            <p>Time: {{time}} (H/M/S)</p>
+            <p>Temperature: {{temp}}&deg;C</p>
+            <p>Humidity: {{humi}}&#37;</p>
+            <p>Latitude: {{lati}}° N</p>
+            <p>Longitude: {{long}}° W</p>
+        </div>
+    </div>
+    <div class="card">
+        <h1>Achievement</h1>
+        <p><strong>Hackathon</strong></p>
+        <ul dir="ltr">
+            <li>1st Solar Energy</li>
+            <li>1st Solar Radiation</li>
+            <li>2nd Solar Radiation</li>
+            <li>3rd Solar Energy</li>   
+        </ul>
+        <p><strong>Reward</strong></p>
+        <ul dir="ltr">
+            <li>5 ChulaCoin</li>
+            <li>100 ChulaCoin</li>
+            <li>50 ChulaCoin</li>
+            <li>1,000 ChulaCoin</li>   
+        </ul>
+    </div>
+</div>
+
+{% endblock%}

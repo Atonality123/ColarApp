@@ -1,0 +1,31 @@
+{% extends "master.html" %}
+{% load static %}
+
+{% block content%}
+<link rel="stylesheet" href="{% static 'hack.css' %}">
+
+<header>
+    <h1 >Welcome to Hackathon</h1>
+</header>
+
+<div class="container">
+    <div class="card">
+        <video id="vdo" src="https://cdn-icons-mp4.flaticon.com/512/10607/10607611.mp4" autoplay muted playsinline loop>
+            Your browser does not support the video tag.
+        </video>
+        <p></p>
+        <h1>Prediction</h1>
+        <h1>Solar Energy</h1>
+        <p class="title">"The sun is the only safe nuclear reactor, situated as it is some ninety-three million miles away." - Stephanie Mills</p>
+        <p class="button"><a href="{% url 'login' %}"><button type="button">Let's hack!</button></a></p>
+    </div>
+    <div class="card">
+        <img id= "vdo" src="https://cdn-icons-gif.flaticon.com/8756/8756005.gif" alt="Animated GIF">
+        <p></p>
+        <h1>Prediction</h1>
+        <h1>Solar Radiation</h1>
+        <p class="title">"Solar radiation is the ultimate source of energy, warming our planet and fueling the forces of nature." - Unknown</p>
+        <p class="button"><a href="{% url 'login' %}"><button type="button">Let's hack!</button></a></p> 
+    </div>
+</div>
+{% endblock%}

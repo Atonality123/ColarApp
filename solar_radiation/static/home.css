@@ -1,0 +1,85 @@
+h1{
+    color: #ff0000;
+    font-size: 28px;
+    margin: 0;
+    font-weight: 400;
+}
+
+
+header {
+    text-align: center;
+    padding: 40px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: block;
+    margin: auto;
+    padding: 8px;
+    color: rgb(255, 0, 0);
+    background-color: #ff0000;
+    text-align: center;
+    cursor: pointer;
+    width: 250px;
+    font-size: 18px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
+
+ .card {
+    background-color: #fff; 
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+    padding: 40px;
+    width: 400px;
+    height: 180px;
+    margin-left: 10px;
+    text-align: center;
+    border: 1.5px solid #ccc;
+}
+
+.container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 40vh;  
+    margin-top: 10px;
+}
+
+.card1 {
+    background-color: #fff; 
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+    padding: 20px;
+    max-width: 400px;
+    height: 220px;
+    margin-left: 10px;
+    text-align: left;
+    border: 1.5px solid #ccc;
+}
+
+#vdo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px auto 0;
+}
+
+.clip{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 10vh;  
+    margin-bottom: 40px;
+}
